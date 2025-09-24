@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-gradient {
+    @apply bg-gradient-to-r from-lyntra-purple to-lyntra-blue text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105;
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  .btn-outline-gradient {
+    @apply relative bg-white text-lyntra-purple font-semibold rounded-lg transition-all duration-300 hover:shadow-lg;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+
+  .btn-outline-gradient::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, #A855F7 0%, #3B82F6 100%);
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-lyntra-purple to-lyntra-blue bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
