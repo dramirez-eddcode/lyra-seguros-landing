@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { ChevronRight, Phone, Shield, Clock, DollarSign, Users, Star, AlertCircle, Menu, X } from 'lucide-react'
+import AsfalizoLogoSimple from '../components/AsfalizoLogoSimple'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('personal')
@@ -10,37 +11,37 @@ export default function Home() {
   const personalInsurances = [
     {
       icon: '❤️',
-      bgColor: 'bg-purple-100',
+      bgColor: 'bg-burgundy/10',
       title: 'Seguro de Vida',
       benefits: ['Protección familiar garantizada', 'Beneficios fiscales', 'Coberturas desde $100,000']
     },
     {
       icon: '🚗',
-      bgColor: 'bg-blue-100',
+      bgColor: 'bg-navy/10',
       title: 'Seguro de Auto',
       benefits: ['Cobertura amplia o limitada', 'Asistencia vial 24/7', 'Descuentos especiales']
     },
     {
       icon: '🏥',
-      bgColor: 'bg-green-100',
+      bgColor: 'bg-forest/10',
       title: 'Gastos Médicos Mayores',
       benefits: ['Red de hospitales premium', 'Sin desembolso inicial', 'Cobertura internacional']
     },
     {
       icon: '🏠',
-      bgColor: 'bg-orange-100',
+      bgColor: 'bg-mustard/10',
       title: 'Seguro de Casa',
       benefits: ['Protección integral', 'Contenidos incluidos', 'Responsabilidad civil']
     },
     {
       icon: '🎓',
-      bgColor: 'bg-indigo-100',
+      bgColor: 'bg-navy/10',
       title: 'Seguro Educativo',
       benefits: ['Universidad garantizada', 'Rendimientos competitivos', 'Flexibilidad de pagos']
     },
     {
       icon: '📈',
-      bgColor: 'bg-pink-100',
+      bgColor: 'bg-burgundy/10',
       title: 'Inversión y Retiro',
       benefits: ['Planes personalizados', 'Beneficios fiscales', 'Asesoría continua']
     }
@@ -97,18 +98,18 @@ export default function Home() {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-2xl font-bold gradient-text">Lyntra Seguros</h1>
+              <AsfalizoLogoSimple size="medium" />
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#seguros" className="text-gray-700 hover:text-lyntra-purple transition">Seguros</a>
-              <a href="#proceso" className="text-gray-700 hover:text-lyntra-purple transition">Proceso</a>
-              <a href="#testimonios" className="text-gray-700 hover:text-lyntra-purple transition">Testimonios</a>
-              <a href="tel:8131274338" className="flex items-center text-gray-700 hover:text-lyntra-purple transition">
+              <a href="#seguros" className="text-gray-700 hover:text-burgundy transition">Seguros</a>
+              <a href="#proceso" className="text-gray-700 hover:text-burgundy transition">Proceso</a>
+              <a href="#testimonios" className="text-gray-700 hover:text-burgundy transition">Testimonios</a>
+              <a href="tel:4779801096" className="flex items-center text-gray-700 hover:text-burgundy transition">
                 <Phone className="h-4 w-4 mr-2" />
-                81 3127 4338
+                477 980 1096
               </a>
-              <button className="btn-gradient px-6 py-2">
+              <button className="bg-burgundy hover:bg-burgundy-dark text-white rounded-lg transition-colors px-6 py-2">
                 Cotizar Ahora
               </button>
             </div>
@@ -129,10 +130,10 @@ export default function Home() {
               <a href="#seguros" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Seguros</a>
               <a href="#proceso" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Proceso</a>
               <a href="#testimonios" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Testimonios</a>
-              <a href="tel:8131274338" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">
-                📞 81 3127 4338
+              <a href="tel:4779801096" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">
+                📞 477 980 1096
               </a>
-              <button className="w-full btn-gradient px-6 py-2 mt-2">
+              <button className="w-full bg-burgundy hover:bg-burgundy-dark text-white rounded-lg transition-colors px-6 py-2 mt-2">
                 Cotizar Ahora
               </button>
             </div>
@@ -147,16 +148,16 @@ export default function Home() {
             <div className="animate-float">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                 Protegemos lo que Más Valoras con{' '}
-                <span className="gradient-text">Seguros a tu Medida</span>
+                <span className="text-burgundy">Seguros a tu Medida</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 Asesoría personalizada y las mejores opciones de seguros en México
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="btn-gradient px-8 py-3 text-lg">
+                <button className="bg-burgundy hover:bg-burgundy-dark text-white rounded-lg transition-colors px-8 py-3 text-lg">
                   Cotiza en 2 Minutos
                 </button>
-                <button className="btn-outline-gradient px-8 py-3 text-lg">
+                <button className="border-2 border-burgundy text-burgundy hover:bg-burgundy hover:text-white px-8 py-3 text-lg rounded-lg transition-all">
                   Asesoría Gratuita
                 </button>
               </div>
@@ -171,10 +172,10 @@ export default function Home() {
             </div>
 
             {/* Quote Calculator */}
-            <div className="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-2xl shadow-xl card-hover">
+            <div className="bg-gradient-to-br from-gray-50 to-burgundy-50 p-8 rounded-2xl shadow-xl card-hover border-2 border-burgundy/10">
               <h3 className="text-2xl font-bold mb-6">Cotización Rápida</h3>
               <form className="space-y-4">
-                <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lyntra-purple focus:outline-none">
+                <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy focus:outline-none">
                   <option>Tipo de Seguro</option>
                   <option>Seguro de Vida</option>
                   <option>Seguro de Auto</option>
@@ -184,14 +185,14 @@ export default function Home() {
                 <input
                   type="email"
                   placeholder="Tu email"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lyntra-purple focus:outline-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy focus:outline-none"
                 />
                 <input
                   type="tel"
                   placeholder="Tu teléfono"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lyntra-purple focus:outline-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy focus:outline-none"
                 />
-                <button type="submit" className="w-full btn-gradient py-3 text-lg">
+                <button type="submit" className="w-full bg-burgundy hover:bg-burgundy-dark text-white rounded-lg transition-colors py-3 text-lg">
                   Obtener Cotización Gratuita
                 </button>
               </form>
@@ -215,8 +216,8 @@ export default function Home() {
                 onClick={() => setActiveTab('personal')}
                 className={`px-6 py-2 rounded-md transition ${
                   activeTab === 'personal'
-                    ? 'bg-gradient-to-r from-lyntra-purple to-lyntra-blue text-white'
-                    : 'text-gray-700 hover:text-lyntra-purple'
+                    ? 'bg-burgundy text-white'
+                    : 'text-gray-700 hover:text-burgundy'
                 }`}
               >
                 Seguros Personales
@@ -225,8 +226,8 @@ export default function Home() {
                 onClick={() => setActiveTab('business')}
                 className={`px-6 py-2 rounded-md transition ${
                   activeTab === 'business'
-                    ? 'bg-gradient-to-r from-lyntra-purple to-lyntra-blue text-white'
-                    : 'text-gray-700 hover:text-lyntra-purple'
+                    ? 'bg-burgundy text-white'
+                    : 'text-gray-700 hover:text-burgundy'
                 }`}
               >
                 Seguros Empresariales
@@ -246,12 +247,12 @@ export default function Home() {
                   <ul className="text-gray-600 space-y-2 mb-4">
                     {insurance.benefits.map((benefit, idx) => (
                       <li key={idx} className="flex items-start">
-                        <span className="text-lyntra-trust mr-2">✓</span>
+                        <span className="text-forest mr-2">✓</span>
                         {benefit}
                       </li>
                     ))}
                   </ul>
-                  <button className="text-lyntra-purple font-semibold flex items-center hover:text-lyntra-blue transition">
+                  <button className="text-burgundy font-semibold flex items-center hover:text-burgundy-dark transition">
                     Cotizar <ChevronRight className="h-4 w-4 ml-1" />
                   </button>
                 </div>
@@ -263,12 +264,12 @@ export default function Home() {
                   <ul className="text-gray-600 space-y-2 mb-4">
                     {insurance.benefits.map((benefit, idx) => (
                       <li key={idx} className="flex items-start">
-                        <span className="text-lyntra-trust mr-2">✓</span>
+                        <span className="text-forest mr-2">✓</span>
                         {benefit}
                       </li>
                     ))}
                   </ul>
-                  <button className="text-lyntra-purple font-semibold flex items-center hover:text-lyntra-blue transition">
+                  <button className="text-burgundy font-semibold flex items-center hover:text-burgundy-dark transition">
                     Cotizar <ChevronRight className="h-4 w-4 ml-1" />
                   </button>
                 </div>
@@ -281,11 +282,11 @@ export default function Home() {
       {/* Why Choose Us */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">¿Por Qué Lyntra Seguros?</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">¿Por Qué Asfalizo Seguros?</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-lyntra-purple to-lyntra-blue rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-burgundy rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8 text-white" />
               </div>
               <h3 className="font-semibold mb-2">Asesoría Imparcial</h3>
@@ -293,7 +294,7 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-lyntra-purple to-lyntra-blue rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
                 <DollarSign className="h-8 w-8 text-white" />
               </div>
               <h3 className="font-semibold mb-2">Mejor Precio</h3>
@@ -301,7 +302,7 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-lyntra-purple to-lyntra-blue rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-forest rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="h-8 w-8 text-white" />
               </div>
               <h3 className="font-semibold mb-2">Atención 24/7</h3>
@@ -309,7 +310,7 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-lyntra-purple to-lyntra-blue rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-mustard rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-white" />
               </div>
               <h3 className="font-semibold mb-2">Gestión de Siniestros</h3>
@@ -320,7 +321,7 @@ export default function Home() {
       </section>
 
       {/* Process */}
-      <section id="proceso" className="section-padding bg-gradient-to-r from-purple-50 to-blue-50">
+      <section id="proceso" className="section-padding bg-gradient-to-r from-gray-50 to-burgundy-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">Proceso Simple y Transparente</h2>
 
@@ -334,10 +335,10 @@ export default function Home() {
             ].map((step, index) => (
               <div key={index} className="text-center relative">
                 {index < 4 && (
-                  <div className="hidden md:block absolute top-6 left-1/2 w-full h-0.5 bg-gradient-to-r from-lyntra-purple to-lyntra-blue"></div>
+                  <div className="hidden md:block absolute top-6 left-1/2 w-full h-0.5 bg-burgundy"></div>
                 )}
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg relative z-10">
-                  <span className="font-bold text-lyntra-purple">{step.number}</span>
+                  <span className="font-bold text-burgundy">{step.number}</span>
                 </div>
                 <h4 className="font-semibold text-sm md:text-base">{step.title}</h4>
                 <p className="text-xs md:text-sm text-gray-600">{step.desc}</p>
@@ -391,14 +392,14 @@ export default function Home() {
             <AlertCircle className="h-8 w-8 text-red-700 mx-auto mb-2" />
             <h3 className="text-xl font-bold text-red-700 mb-2">¿Tienes una Emergencia?</h3>
             <p className="text-red-600 mb-4">Línea de atención 24/7 para siniestros</p>
-            <a href="tel:8131274338" className="text-2xl font-bold text-red-700">
-              📞 81 3127 4338
+            <a href="tel:4779801096" className="text-2xl font-bold text-red-700">
+              📞 477 980 1096
             </a>
           </div>
 
           {/* Final CTA */}
           <h2 className="text-4xl font-bold mb-4">
-            Protege tu Futuro <span className="gradient-text">Hoy Mismo</span>
+            Protege tu Futuro <span className="text-burgundy">Hoy Mismo</span>
           </h2>
           <p className="text-xl text-gray-600 mb-8">
             Recibe asesoría personalizada sin costo ni compromiso
@@ -410,21 +411,21 @@ export default function Home() {
               <input
                 type="text"
                 placeholder="Nombre completo"
-                className="px-4 py-3 rounded-lg border border-gray-300 focus:border-lyntra-purple focus:outline-none"
+                className="px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy focus:outline-none"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="px-4 py-3 rounded-lg border border-gray-300 focus:border-lyntra-purple focus:outline-none"
+                className="px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy focus:outline-none"
               />
             </div>
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <input
                 type="tel"
                 placeholder="Teléfono"
-                className="px-4 py-3 rounded-lg border border-gray-300 focus:border-lyntra-purple focus:outline-none"
+                className="px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy focus:outline-none"
               />
-              <select className="px-4 py-3 rounded-lg border border-gray-300 focus:border-lyntra-purple focus:outline-none">
+              <select className="px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy focus:outline-none">
                 <option>Tipo de seguro</option>
                 <option>Vida</option>
                 <option>Auto</option>
@@ -434,10 +435,10 @@ export default function Home() {
             </div>
             <textarea
               placeholder="¿Cómo podemos ayudarte?"
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-lyntra-purple focus:outline-none mb-4"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy focus:outline-none mb-4"
               rows={3}
             ></textarea>
-            <button type="submit" className="w-full btn-gradient py-3 text-lg">
+            <button type="submit" className="w-full bg-burgundy hover:bg-burgundy-dark text-white rounded-lg transition-colors py-3 text-lg">
               Solicitar Cotización Gratuita
             </button>
           </form>
@@ -447,11 +448,13 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <div className="text-2xl font-bold mb-4">Lyntra Seguros</div>
+          <div className="flex justify-center mb-4">
+            <AsfalizoLogoSimple size="large" variant="dark" />
+          </div>
           <p className="mb-2">Tu aliado en protección patrimonial</p>
-          <p className="mb-4">León, Guanajuato, México | Tel: 81 3127 4338</p>
+          <p className="mb-4">León, Guanajuato, México | Tel: 477 980 1096</p>
           <p className="text-sm text-gray-400">
-            © 2025 Lyntra Promotora de Seguros. Todos los derechos reservados.
+            © 2025 Asfalizo Promotora de Seguros. Todos los derechos reservados.
           </p>
         </div>
       </footer>

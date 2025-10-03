@@ -8,11 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'lyntra-purple': '#A855F7',
-        'lyntra-blue': '#3B82F6',
-        'lyntra-dark-blue': '#1E40AF',
-        'lyntra-light-purple': '#C084FC',
-        'lyntra-trust': '#10B981',
+        'burgundy': '#8B2635',
+        'burgundy-dark': '#6B1F2A',
+        'burgundy-50': '#FFF5F7',
+        'navy': '#2C3E50',
+        'navy-dark': '#1A2332',
+        'forest': '#2E5F3E',
+        'forest-light': '#4A7D5E',
+        'mustard': '#D4A017',
+        'mustard-light': '#E4B22B',
+        'asfalizo-gray': '#F3F4F6',
       },
       animation: {
         'gradient': 'gradient-shift 3s ease infinite',
